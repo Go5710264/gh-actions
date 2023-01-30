@@ -7,3 +7,7 @@ jobs: # далее контент относится именно к jobs
     steps: # первый шаг
       - name: Print to console # теперь имена пишутся с дефисом
         run: echo Hello GH Actions # выполнение действия в консоле на платформе ubuntu
+      - name: Print a few line
+        run: |
+          echo First line
+          echo Second line
