@@ -1,0 +1,9 @@
+name: demo workFlow
+on: workflow_dispatch  # на какое событие будет реагировать данный workflow, чтобы автоматически запуститься
+jobs: # далее контент относится именно к jobs
+  print: # название первого jobs
+  # параметры для первого jobs под именем print
+    runs-on: ubuntu-latest # на какой операционной системе необходимо запустить данный workFlow
+    steps: # первый шаг
+      - name: Print to console # теперь имена пишутся с дефисом
+        run: echo Hello GH Actions # выполнение действия в консоле на платформе ubuntu
